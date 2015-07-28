@@ -12,8 +12,8 @@
 					'medium',
 					'strong'
 				],
-				specialChars: /([!,%,&,@,#,$,^,*,?,_,~])/,
 				delay: 0
+				specialChars: /[^a-zA-Z0-9]/,
 			};
 
 	function Strength(element, options) {
