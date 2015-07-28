@@ -1,5 +1,5 @@
 /*!
- * u.strength.js - Version 0.1.0
+ * u.strength.js - Version 0.2.0
  * password strength plugin for u.js
  * Author: Steve Ottoz <so@dev.so>
  * Build date: 2015-07-28
@@ -19,8 +19,9 @@
 					'medium',
 					'strong'
 				],
-				specialChars: /([!,%,&,@,#,$,^,*,?,_,~])/,
-				delay: 0
+				specialChars: /[^a-zA-Z0-9]/,
+				delay: 0,
+				min: 8
 			};
 
 	function Strength(element, options) {
@@ -49,11 +50,12 @@
 
 			var classes = this.options.classes;
 			var meter = u(this.options.meter);
+			var min = this.options.min;
 			var checkDelay = this.options.delay;
 			var checkTimeout;
 
 			function checkStrength(value, total) {
-				characters = value.length > 8 ? 1 : -1;
+				characters = value.length >= min ? (value.length >= min * 2 ? 2 : 1) : -1;
 				capitalletters = +!!value.match(upperCase);
 				loweletters = +!!value.match(lowerCase);
 				number = +!!value.match(numbers);
