@@ -1,0 +1,17 @@
+{
+  "name": "u.strength.js",
+  "repository": "iamso/u.strength.js",
+  "description": "password strength plugin for u.js",
+  "version": "0.1.0",
+  "keywords": [
+    "u.js",
+    "password",
+    "strength"
+  ],
+  "scripts": [
+    "dist/u.strength.js",
+    "dist/u.strength.min.js",
+    "dist/u.strength.min.js.map"
+  ],
+  "license": "MIT"
+}
