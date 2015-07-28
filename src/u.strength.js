@@ -12,8 +12,9 @@
 					'medium',
 					'strong'
 				],
-				delay: 0
 				specialChars: /[^a-zA-Z0-9]/,
+				delay: 0,
+				min: 8
 			};
 
 	function Strength(element, options) {
@@ -42,11 +43,12 @@
 
 			var classes = this.options.classes;
 			var meter = u(this.options.meter);
+			var min = this.options.min;
 			var checkDelay = this.options.delay;
 			var checkTimeout;
 
 			function checkStrength(value, total) {
-				characters = value.length > 8 ? 1 : -1;
+				characters = value.length >= min ? (value.length >= min * 2 ? 2 : 1) : -1;
 				capitalletters = +!!value.match(upperCase);
 				loweletters = +!!value.match(lowerCase);
 				number = +!!value.match(numbers);
