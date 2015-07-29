@@ -10,7 +10,8 @@
 					'veryweak',
 					'weak',
 					'medium',
-					'strong'
+					'strong',
+					'secure'
 				],
 				specialChars: /[^a-zA-Z0-9]/,
 				delay: 0,
