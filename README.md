@@ -30,22 +30,26 @@ Usage
 	width: 0%;
 	height: 5px;
 	-webkit-transition: all 0.4s ease;
-          transition: all 0.4s ease;
+			    transition: all 0.4s ease;
 }
 #password-meter.veryweak {
-	background: red;
-	width: 25%;
+	background: #D0021B ;
+	width: 20%;
 }
 #password-meter.weak {
-	background: orange;
-	width: 50%;
+	background: #F55F23;
+	width: 40%;
 }
 #password-meter.medium {
-	background: gold;
-	width: 75%;
+	background: #F5A623;
+	width: 60%;
 }
 #password-meter.strong {
-	background: limegreen;
+	background: #F1D617;
+	width: 80%;
+}
+#password-meter.secure {
+	background: #7ED321;
 	width: 100%;
 }
 ```
@@ -72,7 +76,8 @@ u('#password').strength({
 		'veryweak',
 		'weak',
 		'medium',
-		'strong'
+		'strong',
+		'secure'
 	],
 	specialChars: /([!,%,&,@,#,$,^,*,?,_,~])/, // The regex used to check for special characters
 	delay: 0 // The delay for the check after the input changes
