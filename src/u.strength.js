@@ -47,8 +47,9 @@
 			var checkDelay = this.options.delay;
 			var checkTimeout;
 
-			function checkStrength(value, total) {
-				characters = value.length >= min ? (value.length >= min * 2 ? 2 : 1) : -1;
+			function checkStrength(value, total, exponent) {
+				exponent = value.length > min ? 1 + (value.length / 100) : 1;
+				characters = Math.floor(value.length / (min * exponent)) || -1;
 				capitalletters = +!!value.match(upperCase);
 				loweletters = +!!value.match(lowerCase);
 				number = +!!value.match(numbers);
