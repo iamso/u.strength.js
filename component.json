@@ -2,7 +2,7 @@
   "name": "u.strength.js",
   "repository": "iamso/u.strength.js",
   "description": "password strength plugin for u.js",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "keywords": [
     "u.js",
     "password",
