@@ -1,9 +1,9 @@
 /*!
- * u.strength.js - Version 0.3.0
+ * u.strength.js - Version 0.3.1
  * password strength plugin for u.js
  * Author: Steve Ottoz <so@dev.so>
- * Build date: 2015-07-29
- * Copyright (c) 2015 Steve Ottoz
+ * Build date: 2016-01-22
+ * Copyright (c) 2016 Steve Ottoz
  * Released under the MIT license
  */
 ;(function(u, window, document, undefined) {
