@@ -33,23 +33,23 @@ Usage
 			    transition: all 0.4s ease;
 }
 #password-meter.veryweak {
-	background: #D0021B ;
+	background: red ;
 	width: 20%;
 }
 #password-meter.weak {
-	background: #F55F23;
+	background: orangered;
 	width: 40%;
 }
 #password-meter.medium {
-	background: #F5A623;
+	background: orange;
 	width: 60%;
 }
 #password-meter.strong {
-	background: #F1D617;
+	background: gold;
 	width: 80%;
 }
 #password-meter.secure {
-	background: #7ED321;
+	background: limegreen;
 	width: 100%;
 }
 ```
