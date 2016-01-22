@@ -30,5 +30,8 @@
     "u.js",
     "password",
     "strength"
-  ]
+  ],
+  "dependencies": {
+    "u.js": "0.*"
+  }
 }
