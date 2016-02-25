@@ -86,4 +86,4 @@
 			});
 	};
 
-})(u, window, document);
+})(ujs, window, document);
