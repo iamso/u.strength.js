@@ -9,11 +9,18 @@ module.exports = {
     preserveComments: false,
     sourceMap: true
   },
-  dist: {
+  ujs: {
     options: {
       banner: '<%= banner %>'
     },
     src: ['dist/u.strength.js'],
     dest: 'dist/u.strength.min.js'
+  },
+  jquery: {
+    options: {
+      banner: '<%= banner %>'
+    },
+    src: ['dist/jquery.strength.js'],
+    dest: 'dist/jquery.strength.min.js'
   }
 };
