@@ -1,7 +1,7 @@
 {
   "name": "u.strength.js",
-  "version": "0.3.2",
-  "description": "password strength plugin for u.js",
+  "version": "0.4.0",
+  "description": "password strength plugin for u.js/jquery",
   "repository": {
     "type": "git",
     "url": "git://github.com/iamso/u.strength.js.git"
@@ -28,10 +28,12 @@
   ],
   "keywords": [
     "u.js",
+    "jquery",
     "password",
     "strength"
   ],
   "dependencies": {
-    "u.js": "0.*"
+    "u.js": "0.*",
+    "jquery": "*"
   }
 }
